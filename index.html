@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+
+<style>
+    
+    h1{
+        color: rgb(62, 62, 210);
+        text-decoration: underline;
+    }
+
+    table {
+        background-color: rgb(53, 107, 206);
+        color: white;
+        width: 65%;
+        height: 90%;
+    }
+
+    label{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    button{
+        margin-left: 40px;
+       
+    }
+
+    td{
+        padding-bottom: 20px;
+    }
+
+    input , textarea{
+        margin-left: 40px;
+    }
+
+</style>
+
+<body>
+    <center>
+
+    <img src="./img/logo.png" alt="Saylani-logo">
+
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <table >
+
+        <form action="">
+            <tr>
+                <td>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter the First Name"
+                        maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter the Last Name" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="birth">DATE OF BIRTH</label>
+                    <input type="date" id="birth" name="birth">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Email">EMAIL ID</label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter the Email Address">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="number">MOBILE NUMBER</label>
+                    <input type="number" id="number" name="number" placeholder="Enter the Email Address" maxlength="10">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">GENDER</label>
+                    Male<input type="radio" id="gender" name="gender" value="male">
+                    Female<input type="radio" id="gender" name="gender" value="male">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">ADDRESS</label>
+                    <textarea name="address" id="address"></textarea>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">CITY</label>
+                    <input type="text" id="city" name="city" placeholder="Enter the City Name" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="PIN">PIN CODE</label>
+                    <input type="number" id="PIN" name="PIN" placeholder="Enter the PIN Code" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state">STATE</label>
+                    <input type="text" id="state" name="state" placeholder="Enter the State Name" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country">COUNTRY</label>
+                    <input type="text" id="country" name="country" placeholder="Enter the Country Name" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hobbies">HOBBIES</label>
+                    <input type="checkbox" id="drawing" name="drawing" value="drawing">Drawing
+                    <input type="checkbox" id="singing" name="singing" value="singing">Singing
+                    <input type="checkbox" id="dancing" name="dancing" value="dancing">Dancing
+                    <input type="checkbox" id="sketching" name="sketching" value="sketching">Sketching
+                    <input type="checkbox" id="other" name="other" value="other">Other
+                    <input type="text" name="other" id="other">
+                </td>
+            </tr>
+
+            <table>
+                
+                    <tr>
+                        <th>QUALIFICATION</th>
+                        <th>SI.No</th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of passing</th>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>Class X</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>2</td>
+                        <td>Class XII</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+            
+            </table>
+
+            <table>
+
+            <tr>
+                <td>
+                    <label for="country">COURCES APPLIED FOR</label>
+                    BCA<input type="radio" id="BCA" name="BCA" value="BCA">
+                    B.A<input type="radio" id="B.A" name="B.A" value="B.A">
+                    B.Sc<input type="radio" id="B.Sc" name="B.Sc" value="B.Sc">
+                    B.Com<input type="radio" id="B.Com" name="B.Com" value="B.Com"><br><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><button>Submit</button><button>Reset</button></td>
+                <td></td>
+            </tr>
+       
+        </table>
+
+        </form>
+        
+    </table>
+
+
+</center>
+</body>
+
+</html>
